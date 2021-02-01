@@ -1,211 +1,209 @@
-.form-display--flex{
-    display: flex;
-    flex-wrap: wrap;
+.form-display--flex {
+  display: flex;
+  flex-wrap: wrap;
 }
-.form__inputs{
-    width: 50%;
-    flex-wrap: nowrap;
+.form__inputs {
+  width: 50%;
+  flex-wrap: nowrap;
 }
-.form__buttons{
-    width: 40%;
+.form__buttons {
+  width: 40%;
 }
-.form__buttons{
-    display: flex;
+.form__buttons {
+  display: flex;
 }
-.input__groub{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1em;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+.input__groub {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
-.label__groub{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1em;
-    flex-basis: 1%;
-    margin-right: 0;
+.label__groub {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  flex-basis: 1%;
+  margin-right: 0;
 }
 .input__task {
-    width: 100%;
-    height: 2.1em;
-    border-radius: 5px;
-    margin: 0.5em;
+  width: 100%;
+  height: 2.1em;
+  border-radius: 5px;
+  margin: 0.5em;
 }
-.input__label{
-    margin-right: 0;
-    width: 100%;
-    align-self: center;
-    text-align: right;
+.input__label {
+  margin-right: 0;
+  width: 100%;
+  align-self: center;
+  text-align: right;
 }
 
-.input--border-black{
-    border-color: black;
+.input--border-black {
+  border-color: black;
 }
-.input--border-thin{
-    border-width: 1px;
+.input--border-thin {
+  border-width: 1px;
 }
-.form__buttons{
-    margin: 1em;
+.form__buttons {
+  margin: 1em;
 }
-.input__label{
-    margin-right: 0.5em;
+.input__label {
+  margin-right: 0.5em;
 }
-.btn{
-    border-radius: 5px;
-    outline: none;
-    margin: 0.5em;
+.btn {
+  border-radius: 5px;
+  outline: none;
+  margin: 0.5em;
 }
-.btn--size-meduim{
-    width: 50%;
-    height: 2.5em;
-    margin-bottom: 0.5em;
+.btn--size-meduim {
+  width: 50%;
+  height: 2.5em;
+  margin-bottom: 0.5em;
 }
-.btn--size-large{
-    width: 6em;
-    height: 3em;
+.btn--size-large {
+  width: 6em;
+  height: 3em;
 }
-.btn--border-black{
-    border-color: black;
+.btn--border-black {
+  border-color: black;
 }
-.btn--border-none{
-    border: none;
+.btn--border-none {
+  border: none;
 }
-.btn--flex-end{
-    align-self: flex-end;
+.btn--flex-end {
+  align-self: flex-end;
 }
 .btn--border-thin {
-    border-width: 1px;
+  border-width: 1px;
 }
-.btn--transform-uppercase{
-    text-transform: uppercase;
+.btn--transform-uppercase {
+  text-transform: uppercase;
 }
-.btn--background-lightgray{
-    background-color: lightgray;
+.btn--background-lightgray {
+  background-color: lightgray;
 }
-.btn--background-lightgray{
-    background-color: rgb(158, 226, 248);
+.btn--background-lightgray {
+  background-color: rgb(158, 226, 248);
 }
-.section__tasks{
-    padding-left: 3em;
-    padding-right: 3em;
+.section__tasks {
+  padding-left: 3em;
+  padding-right: 3em;
 }
-.separator{
-    width: 100%;
-    margin-bottom: 1em;
-    margin-top: 1em;
+.separator {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
-.separator--color-black{
-    border-color: black;
+.separator--color-black {
+  border-color: black;
 }
-.form__search{
-    flex-wrap: wrap;
+.form__search {
+  flex-wrap: wrap;
 }
-.search__groub{
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    border: 10px solid lightgray ;
-    padding: 0.3em;
+.search__groub {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border: 10px solid lightgray;
+  padding: 0.3em;
 }
-.search__task{
-    width: 100%;
-    outline: none;
+.search__task {
+  width: 100%;
+  outline: none;
 }
-.input--border-none{
-    border: none;
+.input--border-none {
+  border: none;
 }
-.icon--color-lightgray{
-    color:lightgray;
+.icon--color-lightgray {
+  color: lightgray;
 }
-.icon--color-black{
-    color: black;
+.icon--color-black {
+  color: black;
 }
 .cancelbutton--visibility-hidden::-webkit-search-cancel-button {
-  -webkit-appearance:none;
+  -webkit-appearance: none;
 }
-.task__textarea{
-    width: 90%;
-    height: 3em;
-    padding: 0;
-    resize: none;
+.task__textarea {
+  width: 90%;
+  height: 3em;
+  padding: 0;
+  resize: none;
 }
-.task__buttons{
-    font-size: 1.8em;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
+.task__buttons {
+  font-size: 1.8em;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
 }
-.task__buttons > i{
-    cursor: pointer;
-    margin: 0.5em;
-    margin-left: 0;
-    margin-right: 0;
+.task__buttons > i {
+  cursor: pointer;
+  margin: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
 }
-.task{
-    padding: 0.5em;
-    border: 1px solid black;
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 1.5em;
+.task {
+  padding: 0.5em;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1.5em;
 }
-.task__text{
-    width: 100%;
+.task__text {
+  width: 100%;
 }
-.textarea--border-none{
-    border: none;
+.textarea--border-none {
+  border: none;
 }
-.textarae--background-white{
-    background-color: white;
+.textarae--background-white {
+  background-color: white;
 }
-.input--background-white{
-    background-color: white;
+.input--background-white {
+  background-color: white;
 }
-.counts{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 1em;
+.counts {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 1em;
 }
-.count__done{
-    margin-left: 5%;
-    margin-right: 5%;
+.count__done {
+  margin-left: 5%;
+  margin-right: 5%;
 }
-.confairm{
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: none;
-    z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background-color: none;
-    overflow: hidden;
+.confairm {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  overflow: hidden;
 }
-.confairm__body{
-    position: relative;
-    width: 30%;
-    height: 20%;
-    margin: auto;
-    top:35%;
-    border: none;
-    padding: 0.5em;
-    background-color: white;
+.confairm__body {
+  position: relative;
+  width: 30%;
+  height: 20%;
+  margin: auto;
+  top: 35%;
+  border: none;
+  padding: 0.5em;
+  background-color: white;
 }
-.confairm--shadow-true{
-    box-shadow:  0px 15px 10px 5px lightgray;
+.confairm--shadow-true {
+  box-shadow: 0px 15px 10px 5px lightgray;
 }
-.confairm__btns{
-    justify-content: flex-end;
+.confairm__btns {
+  justify-content: flex-end;
 }
-.caursor--pointer{
-    cursor: pointer;
-    
+.caursor--pointer {
+  cursor: pointer;
 }
 
-.done__task{
-    background-color: chartreuse;
-    
+.done__task {
+  background-color: chartreuse;
 }

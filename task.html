@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Task 4 JS</title>
-        <meta charset="UTF-16" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="task.css" />
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-        <script type="text/javascript" src="task.js"></script>
-        <script async src="https://use.fontawesome.com/b74a303e6b.js"></script>
-    </head>
-    <body>
-        <header>
-            <form class="form-display--flex">
-                <div class = "form__inputs form-display--flex">
-                    <div class = "label__groub">
-                        <label class="input__label" for="task">Tasks </label>
-                        <label class="input__label" for="assignee">Assignee </label>
-                    </div>
-                    <div class = "input__groub">
-                        <input type = "text" id="task" placeholder="placeholder" class="input__task input--border-black input--border-thin"/>
-                        <input type = "text" id="assignee" placeholder="placeholder" class="input__task input--border-black input--border-thin"/>
-                    </div>
-                </div>
-                <div class="form__buttons">
-                    <button class = "btn btn--border-black btn--flex-end btn--size-meduim btn--border-thin" onclick="addTask()">Add</button>
-                </div>
-            </form>
-        </header>
-        <section class="section__tasks">
-            <hr class = "separator separator--color-black">
-            <form class="form__search form-display--flex">
-                <div class="search__groub">
-                    <i class="fa fa-search icon--color-lightgray" aria-hidden="true"></i>
-                    <input type="search" placeholder="Search" id="searchTask" class="search__task input--border-none cancelbutton--visibility-hidden" oninput="showSpecificTasks()">
-                    <i class="fa fa-times icon--color-black caursor--pointer" aria-hidden="true" onclick="clearSearchValue()"></i>
-                </div>
-            </form>
-            <div class="tasks" id="tasksId">
-                <div class="task done__task" id="testTask">
+  <head>
+    <title>Task 4 JS</title>
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="task.css" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="task.js"></script>
+    <script async src="https://use.fontawesome.com/b74a303e6b.js"></script>
+  </head>
+  <body>
+    <header>
+      <form class="form-display--flex">
+        <div class="form__inputs form-display--flex">
+          <div class="label__groub">
+            <label class="input__label" for="task">Tasks </label>
+            <label class="input__label" for="assignee">Assignee </label>
+          </div>
+          <div class="input__groub">
+            <input
+              type="text"
+              id="task"
+              placeholder="placeholder"
+              class="input__task input--border-black input--border-thin"
+            />
+            <input
+              type="text"
+              id="assignee"
+              placeholder="placeholder"
+              class="input__task input--border-black input--border-thin"
+            />
+          </div>
+        </div>
+        <div class="form__buttons">
+          <button
+            class="btn btn--border-black btn--flex-end btn--size-meduim btn--border-thin"
+            onclick="addTask()"
+          >
+            Add
+          </button>
+        </div>
+      </form>
+    </header>
+    <section class="section__tasks">
+      <hr class="separator separator--color-black" />
+      <form class="form__search form-display--flex">
+        <div class="search__groub">
+          <i class="fa fa-search icon--color-lightgray" aria-hidden="true"></i>
+          <input
+            type="search"
+            placeholder="Search"
+            id="searchTask"
+            class="search__task input--border-none cancelbutton--visibility-hidden"
+            oninput="showSpecificTasks()"
+          />
+          <i
+            class="fa fa-times icon--color-black caursor--pointer"
+            aria-hidden="true"
+            onclick="clearSearchValue()"
+          ></i>
+        </div>
+      </form>
+      <div class="tasks" id="tasksId">
+        <!-- <div class="task done__task" id="testTask">
                     <div class="task__text">
                         <input id="testInput" type="text" value="task : 10" class="input--border-none done__task input--background-white" disabled>
                         <textarea class="task__textarea textarea--border-none textarae--background-white done__task" disabled>assignee : play dota 2 to get 5 starts
@@ -47,34 +72,40 @@
                         <i class="fa fa-trash" aria-hidden="true"></i>
                         <i class="fa fa-check-circle" aria-hidden="true"></i>
                     </div>
-                </div>
-                
-            </div>
-            
-        </section>
-        <footer class = "counts">
-            <div id ="done" class="count__done">Done : </div>
-            <div id="todo"  class="count__todo">ToDo : </div>
-        </footer>
-         <div class="confairm" id="confairm">
-            <div class="confairm__body confairm--shadow-true">
-                <div class="confairm__message">
-                    <p>Are you sure Delete This Task</p>
-                </div>
-                <div class= "confairm__btns form-display--flex ">
-                    <button id="cancel" class="btn btn--background-lightblue btn--transform-uppercase btn--size-large btn--border-none" onclick="closeConfairmMessage()">
-                        Cancel
-                    </button>
-                    <button id="delete" class="btn btn--background-lightgray btn--transform-uppercase btn--size-large btn--border-none" onclick="deleteTask()">
-                        Delete
-                    </button>
-                </div>
-            </div>
+                </div> -->
+      </div>
+    </section>
+    <footer class="counts">
+      <div id="done" class="count__done">Done :</div>
+      <div id="todo" class="count__todo">ToDo :</div>
+    </footer>
+    <div class="confairm" id="confairm">
+      <div class="confairm__body confairm--shadow-true">
+        <div class="confairm__message">
+          <p>Are you sure Delete This Task</p>
         </div>
-        <script>
-            showAllTasks();
-            getCountToTasks();
-            getCountDoneTasks();
-        </script>
-    </body>
+        <div class="confairm__btns form-display--flex">
+          <button
+            id="cancel"
+            class="btn btn--background-lightblue btn--transform-uppercase btn--size-large btn--border-none"
+            onclick="closeConfairmMessage()"
+          >
+            Cancel
+          </button>
+          <button
+            id="delete"
+            class="btn btn--background-lightgray btn--transform-uppercase btn--size-large btn--border-none"
+            onclick="deleteTask()"
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      showAllTasks();
+      getCountToTasks();
+      getCountDoneTasks();
+    </script>
+  </body>
 </html>
