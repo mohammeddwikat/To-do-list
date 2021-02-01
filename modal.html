@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+        <link rel="stylesheet" href="task.css" />
+        <script type="text/javascript" src="task.js"></script>
+    </head>
+    <body>
+        <button onclick="showConfairmMessage()">click</button>
+
+        <div class="confairm" id="confairm">
+            <div class="confairm__body confairm--shadow-true">
+                <div class="confairm__message">
+                    <p>Are you sure Delete This Task</p>
+                </div>
+                <div class= "confairm__btns form-display--flex ">
+                    <button class="btn btn--background-lightblue btn--transform-uppercase btn--size-large btn--border-none" onclick="closeConfairmMessage()">
+                        Cancel
+                    </button>
+                    <button class="btn btn--background-lightgray btn--transform-uppercase btn--size-large btn--border-none">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
