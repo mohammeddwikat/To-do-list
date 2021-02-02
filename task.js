@@ -26,14 +26,11 @@ const showAllTasks = () => {
   let textsDiv;
   let textView;
   let textArea;
-  let innerDiv;
+  let buttonsDiv;
   let cancelIcon;
   let doneIcon;
-  console.log(arrOfkeys);
 
   for (let i in arrOfkeys) {
-    console.log(i);
-
     jsonObj = JSON.parse(window.localStorage.getItem(arrOfkeys[i]));
     id = jsonObj.id;
     taskName = jsonObj.task;
@@ -42,34 +39,30 @@ const showAllTasks = () => {
     textsDiv = document.createElement("div");
     textView = getTextView(taskName, id, "tv");
     textArea = getTextView(assignee, id, "ta");
-    innerDiv = document.createElement("div");
+    buttonsDiv = document.createElement("div");
     cancelIcon = getDeleteIcon(id);
     doneIcon = document.createElement("i");
     taskDiv.id = id;
     taskDiv.classList.add("task");
-    innerDiv.classList.add("task__buttons");
-    innerDiv.id = id + "buttons";
-
+    buttonsDiv.classList.add("task__buttons");
+    buttonsDiv.id = id + "buttons";
     if (jsonObj.state == "done") {
       doneIcon = getUndoIcon(id);
-
       taskDiv.classList.add("done__task");
       textArea.classList.add("done__task");
       textView.classList.add("done__task");
     } else {
       doneIcon = getConfirmIcon(id);
     }
-
     doneIcon.id = id + "DoneIcon";
     textsDiv.classList.add("task__text");
     textsDiv.id = id + "textsDiv";
-
-    innerDiv.appendChild(cancelIcon);
-    innerDiv.appendChild(doneIcon);
+    buttonsDiv.appendChild(cancelIcon);
+    buttonsDiv.appendChild(doneIcon);
     textsDiv.appendChild(textView);
     textsDiv.appendChild(textArea);
     taskDiv.appendChild(textsDiv);
-    taskDiv.appendChild(innerDiv);
+    taskDiv.appendChild(buttonsDiv);
     tasks.appendChild(taskDiv);
   }
 };
@@ -254,8 +247,6 @@ const getTextfield = (taskName, id) => {
   textinput.classList.add("input--background-white");
   textinput.value = taskName;
   textinput.onblur = backToTextView;
-  //textinput.disabled = true;
-
   return textinput;
 };
 const getTextView = (text, id, element) => {
@@ -265,11 +256,8 @@ const getTextView = (text, id, element) => {
   } else if (element == "tv") {
     textView.id = id + "textView";
   }
-  //task__textarea
-
   textView.innerHTML = text;
   textView.onclick = editTask;
-
   return textView;
 };
 const getDeleteIcon = (id) => {
@@ -279,7 +267,6 @@ const getDeleteIcon = (id) => {
   cancelIcon.classList.add("fa-trash");
   cancelIcon.id = id + "DeleteIcon";
   cancelIcon.onclick = showConfairmMessage;
-
   return cancelIcon;
 };
 
@@ -301,7 +288,6 @@ const getConfirmIcon = (id) => {
   confirmIcon.classList.add("fa-check-circle");
   confirmIcon.onclick = finishtTask;
   confirmIcon.id = id + "DoneIcon";
-
   return confirmIcon;
 };
 
