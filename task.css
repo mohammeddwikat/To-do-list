@@ -12,7 +12,7 @@
 .form__buttons {
   display: flex;
 }
-.input__groub {
+.input__group {
   display: flex;
   flex-wrap: wrap;
   margin: 1em;
@@ -20,7 +20,7 @@
   margin-left: 0;
   margin-right: 0;
 }
-.label__groub {
+.label__group {
   display: flex;
   flex-wrap: wrap;
   margin: 1em;
@@ -57,7 +57,7 @@
   outline: none;
   margin: 0.5em;
 }
-.btn--size-meduim {
+.btn--size-medium {
   width: 50%;
   height: 2.5em;
   margin-bottom: 0.5em;
@@ -102,7 +102,7 @@
 .form__search {
   flex-wrap: wrap;
 }
-.search__groub {
+.search__group {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
@@ -124,7 +124,7 @@
 .icon--color-black {
   color: black;
 }
-.cancelbutton--visibility-hidden::-webkit-search-cancel-button {
+.cancelButton--visibility-hidden::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 .task__textarea {
@@ -158,7 +158,7 @@
 .textarea--border-none {
   border: none;
 }
-.textarae--background-white {
+.textarea--background-white {
   background-color: white;
 }
 .input--background-white {
@@ -173,7 +173,7 @@
   margin-left: 5%;
   margin-right: 5%;
 }
-.confairm {
+.confirm {
   position: fixed;
   left: 0;
   top: 0;
@@ -184,9 +184,9 @@
   background-color: none;
   overflow: hidden;
 }
-.confairm__body {
+.confirm__body {
   position: relative;
-  width: 30%;
+  width: 70%;
   height: 20%;
   margin: auto;
   top: 35%;
@@ -194,16 +194,15 @@
   padding: 0.5em;
   background-color: white;
 }
-.confairm--shadow-true {
+.confirm--shadow-true {
   box-shadow: 0px 15px 10px 5px lightgray;
 }
-.confairm__btns {
+.confirm__buttons {
   justify-content: flex-end;
 }
-.caursor--pointer {
+.cursor--pointer {
   cursor: pointer;
 }
-
 .done__task {
   background-color: chartreuse;
 }
