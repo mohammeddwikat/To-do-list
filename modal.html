@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>test</title>
-        <link rel="stylesheet" href="task.css" />
-        <script type="text/javascript" src="task.js"></script>
-    </head>
-    <body>
-        <button onclick="showConfirmMessage()">click</button>
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="task.css" />
+    <script type="text/javascript" src="task.js"></script>
+  </head>
+  <body>
+    <button onclick="showConfirmMessage()">click</button>
 
-        <div class="confairm" id="confairm">
-            <div class="confairm__body confairm--shadow-true">
-                <div class="confairm__message">
-                    <p>Are you sure Delete This Task</p>
-                </div>
-                <div class= "confirm__buttons form-display--flex ">
-                    <button class="btn btn--background-lightblue btn--transform-uppercase btn--size-large btn--border-none" onclick="closeConfairmMessage()">
-                        Cancel
-                    </button>
-                    <button class="btn btn--background-lightgray btn--transform-uppercase btn--size-large btn--border-none">
-                        Delete
-                    </button>
-                </div>
-            </div>
+    <div class="confairm" id="confairm">
+      <div class="confairm__body confairm--shadow-true">
+        <div class="confairm__message">
+          <p>Are you sure Delete This Task</p>
         </div>
-    </body>
+        <div class="confirm__buttons form-display--flex">
+          <button
+            class="btn btn--background-lightblue btn--transform-uppercase btn--size-large btn--border-none"
+            onclick="closeConfairmMessage()"
+          >
+            Cancel
+          </button>
+          <button
+            class="btn btn--background-lightgray btn--transform-uppercase btn--size-large btn--border-none"
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+<!-- 
+<div id="3Make to do list Tasks" class="task done__task" style="display: flex">
+  <div class="task__text" id="3Make to do list TaskstextsDiv">
+    <p id="3Make to do list TaskstextView" class="done__task">
+      Make to do list Tasks
+    </p>
+    <p id="3Make to do list Taskstextarea" class="done__task">Mohammed</p>
+  </div>
+  <div class="task__buttons" id="3Make to do list Tasksbuttons">
+    <i class="fa fa-trash" id="3Make to do list TasksDeleteIcon"></i
+    ><i class="fa fa-undo" id="3Make to do list TasksDoneIcon"></i>
+  </div>
+</div> -->
